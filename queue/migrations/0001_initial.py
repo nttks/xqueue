@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('requester_id', models.CharField(max_length=128)),
-                ('lms_callback_url', models.CharField(max_length=128, db_index=True)),
+                ('lms_callback_url', models.CharField(max_length=255, db_index=True)),
                 ('queue_name', models.CharField(max_length=128, db_index=True)),
                 ('xqueue_header', models.CharField(max_length=1024)),
                 ('xqueue_body', models.TextField()),
